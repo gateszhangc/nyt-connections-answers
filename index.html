@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Connections Answers - Daily Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NYT Connections Answers</h1>
+            <p class="subtitle">Daily solutions and hints for The New York Times Connections puzzle</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="date-selector">
+            <label for="date-select">Select Date:</label>
+            <input type="date" id="date-select" value="">
+        </section>
+
+        <section class="puzzle-info">
+            <div class="puzzle-header">
+                <h2 id="puzzle-date">Today's Connections</h2>
+                <button id="show-hints" class="btn-secondary">Show Hints</button>
+                <button id="show-answers" class="btn-primary">Show Answers</button>
+            </div>
+        </section>
+
+        <section class="connections-grid" id="connections-grid">
+            <div class="connection-group" data-category="yellow">
+                <div class="category-header">
+                    <span class="category-name">Loading...</span>
+                    <span class="category-difficulty">Easy</span>
+                </div>
+                <div class="words-grid">
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                </div>
+            </div>
+
+            <div class="connection-group" data-category="green">
+                <div class="category-header">
+                    <span class="category-name">Loading...</span>
+                    <span class="category-difficulty">Medium</span>
+                </div>
+                <div class="words-grid">
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                </div>
+            </div>
+
+            <div class="connection-group" data-category="blue">
+                <div class="category-header">
+                    <span class="category-name">Loading...</span>
+                    <span class="category-difficulty">Hard</span>
+                </div>
+                <div class="words-grid">
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                </div>
+            </div>
+
+            <div class="connection-group" data-category="purple">
+                <div class="category-header">
+                    <span class="category-name">Loading...</span>
+                    <span class="category-difficulty">Tricky</span>
+                </div>
+                <div class="words-grid">
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                    <div class="word-card empty"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hints-section" id="hints-section" style="display: none;">
+            <h3>Hints</h3>
+            <div class="hints-grid">
+                <div class="hint-card">
+                    <span class="hint-label">Yellow:</span>
+                    <span class="hint-text" id="hint-yellow">Think about things that...</span>
+                </div>
+                <div class="hint-card">
+                    <span class="hint-label">Green:</span>
+                    <span class="hint-text" id="hint-green">Consider items that...</span>
+                </div>
+                <div class="hint-card">
+                    <span class="hint-label">Blue:</span>
+                    <span class="hint-text" id="hint-blue">Look for words related to...</span>
+                </div>
+                <div class="hint-card">
+                    <span class="hint-label">Purple:</span>
+                    <span class="hint-text" id="hint-purple">Think outside the box about...</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 NYT Connections Answers. This is an independent fan site.</p>
+            <p>Not affiliated with The New York Times.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
