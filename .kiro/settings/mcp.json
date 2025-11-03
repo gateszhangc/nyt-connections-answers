@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "puppeteer_navigate",
+        "puppeteer_screenshot",
+        "puppeteer_evaluate"
+      ]
+    }
+  }
+}
